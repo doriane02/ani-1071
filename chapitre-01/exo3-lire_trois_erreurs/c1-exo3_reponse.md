@@ -14,14 +14,14 @@ return 0;
     ```
  ligne signalée:3 ligne fautive : 3 .c'est au niveau de la compilation que l'erreur a été détecté
 
-```
+``
 #include<cstdio>
 int main(){
 printf("NTSAMA ABEGA THERESE DORIANE\n");
 printf("YAOUNDE\n") 
 return 0;
 }
-```
+``
 deuxième errreur:retirer le point virgule à la ligne 4 
 ```c1-exo3_main.cpp: In function 'int main()':
 c1-exo3_main.cpp:4:24: error: expected ';' before 'return'
@@ -34,13 +34,13 @@ c1-exo3_main.cpp:4:24: error: expected ';' before 'return'
   
 ligne signalée: 4 Ligne fautive: 4 C'est au niveau de la compilation que l'erreur a été signalée
 
-```
+``
 int main(){
 printf("NTSAMA ABEGA THERESE DORIANE\n");
 printf("YAOUNDE\n");
 return 0;
 }
-```
+``
 troisième erreur: retirer ```` #include <cstdio>```
 ``` c1-exo3_main.cpp: In function 'int main()':
 c1-exo3_main.cpp:3:5: error: 'printf' was not declared in this scope
