@@ -1,0 +1,2 @@
+En essayant d'ouvrir le fichier bonjour.o le message suivant est apparu: "The file is not displayed in the text editor because it is either binary or uses an unsupported text encoding." Ceci rejoint parfaitemment les explications qui ont été données pendant le cours sur les étapes de la compilation, plus précisément sur l'étape de l'assemblage, étape durant laquelle le texte est transformé en binaire.
+Le compilateur utilisé est g++
