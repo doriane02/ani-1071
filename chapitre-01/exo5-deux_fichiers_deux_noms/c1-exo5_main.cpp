@@ -1,7 +1,6 @@
 #include <cstdio>
 int main(){
-    printf("NTSAMA ABEGA THERESE DORIANE\n");
-    printf("YAOUNDE\n");
+    printf("Bonjour\n");
     return 0;
 
 }
