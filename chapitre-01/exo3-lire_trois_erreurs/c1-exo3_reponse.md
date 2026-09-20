@@ -1,53 +1,53 @@
-''
-'#include<cstdio>
+```
+#include <cstdio>
 int main(){
 Printf("NTSAMA ABEGA THERESE DORIANE\n");
 printf("YAOUNDE\n";
 return 0;
-}'''
+}```
  première erreur: écriture de Printf à la ligne 3
-    '''   sohan.cpp: In function 'int main()':
-    sohan.cpp:3:5: error: 'Printf' was not declared in this scope; did you mean 'printf'?
+    ```c1-exo3_main.cpp: In function 'int main()':
+    c1-exo3_main.cpp:3:5: error: 'Printf' was not declared in this scope; did you mean 'printf'?
     3 |     Printf("NTSAMA ABEGA THERESE DORIANE\n");
       |     ^~~~~~
       |     printf  
-    '''
+    ```
  ligne signalée:3 ligne fautive : 3 .c'est au niveau de la compilation que l'erreur a été détecté
 
-'''
+```
 #include<cstdio>
 int main(){
 printf("NTSAMA ABEGA THERESE DORIANE\n");
 printf("YAOUNDE\n") 
 return 0;
 }
-'''
+```
 deuxième errreur:retirer le point virgule à la ligne 4 
-'''sohan.cpp: In function 'int main()':
-sohan.cpp:4:24: error: expected ';' before 'return'
+```c1-exo3_main.cpp: In function 'int main()':
+c1-exo3_main.cpp:4:24: error: expected ';' before 'return'
     4 |     printf("YAOUNDE\n")
       |                        ^
       |                        ;
     5 |     return 0;
       |     ~~~~~~ 
-      '''
+      ```
   
 ligne signalée: 4 Ligne fautive: 4 C'est au niveau de la compilation que l'erreur a été signalée
 
-'''
+```
 int main(){
 printf("NTSAMA ABEGA THERESE DORIANE\n");
-printf("YAOUNDE\n);
+printf("YAOUNDE\n");
 return 0;
 }
-'''
-troisième erreur: retirer ''' #include <cstdio>''' 
-'''     sohan.cpp: In function 'int main()':
-sohan.cpp:3:5: error: 'printf' was not declared in this scope
+```
+troisième erreur: retirer ```` #include <cstdio>```
+``` c1-exo3_main.cpp: In function 'int main()':
+c1-exo3_main.cpp:3:5: error: 'printf' was not declared in this scope
     3 |     printf("NTSAMA ABEGA THERESE DORIANE\n");
       |     ^~~~~~
-sohan.cpp:1:1: note: 'printf' is defined in header '<cstdio>'; this is probably fixable by adding '#include <cstdio>'
+c1-exo3_main.cpp:1:1: note: 'printf' is defined in header '<cstdio>'; this is probably fixable by adding '#include <cstdio>'
   +++ |+#include <cstdio>
-    1 |  '''
+    1 |  ```
    ligne signalée: 3 ligne fautive :dans ce cas, l'erreur est due au manque d'une ligne de commande fondamentale au niveau de l'en-tête ,donc la ligne fautive n'est pas une ligne du programme
 C'est au niveau de la compilation que cette erreur a été signalée
