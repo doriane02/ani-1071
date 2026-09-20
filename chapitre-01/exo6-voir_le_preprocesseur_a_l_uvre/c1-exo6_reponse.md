@@ -1,2 +1,2 @@
 le fichier sortie.txt contient 2038 lignes, soit 2032 de lignes en plus que celles du programme bonjour.cpp.
-Ceci s'explique par le fait qu'à l'étape 1, le preprocesseur ne copie pas juste la ligne ```#include<cstdio>```, il le remplace par son contenu qui est volumineux, traitant non pas un simple fichier de 6 lignes mais un qui contient plus de 2000 lignes en plus que celles visibles dans le premier fichier. 
+Ceci s'explique par le fait qu'à l'étape 1, le préprocesseur ne copie pas juste la ligne ```#include<cstdio>```, il le remplace par son contenu qui est volumineux, traitant non pas un simple fichier de 6 lignes mais un qui contient plus de 2000 lignes en plus que celles visibles dans le premier fichier. Le compilateur utilisé est g++
