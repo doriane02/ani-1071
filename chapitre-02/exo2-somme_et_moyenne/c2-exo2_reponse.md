@@ -19,10 +19,10 @@ Le programme
 ```
 voici le resultat obtenu après compilation du programme avec les valeurs 7 8 9 10 10 
 ```
-PS C:\Users\MEC\desktop> g++ moy.cpp -o moy.exe
-PS C:\Users\MEC\desktop> .\moy.exe
+PS C:\Users\MEC\desktop> g++  c2-exo2_main.cpp -o c2-exo2_main.exe
+PS C:\Users\MEC\desktop> .\c2-exo2_main.exe
 entrer cinq entiers:7 8 9 10 10
-somme= 44
- moyenne= 8.8
+somme = 44
+ moyenne = 8.8
 ```
 
