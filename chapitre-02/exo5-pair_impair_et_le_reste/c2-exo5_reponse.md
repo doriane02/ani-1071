@@ -28,13 +28,13 @@ int main () {
     }
 
 
-retun 0;
+return 0;
 
 }
 ```
 tests:
 ```
-PS C:\Users\MEC\desktop> g++ c2-exo4_reponse.cpp -o version.exe
+PS C:\Users\MEC\desktop> g++ c2-exo5_reponse.cpp -o version.exe
 PS C:\Users\MEC\desktop> .\version.exe
  entrer un nombre:0
  le nombre est pair
