@@ -30,4 +30,4 @@ PS C:\Users\MEC\Desktop\ani-1071\chapitre-02\exo11-les_nombres_premiers> .\exo11
  89
  97
  ```
- Lorsque l'on cherche les diviseurs d'un nombre, on peut s'arrêter à sa racinne carré parce que les diviseurs viennent en pairs,et en s'arretant à la racine carré on cherche tous les premiers composants de pairs possibles.
+ Lorsque l'on cherche les diviseurs d'un nombre, on peut s'arrêter à sa racinne carré parce que les diviseurs viennent en pairs,et en s'arretant à la racine carré on cherche tous les premiers composants de pairs possibles.s
