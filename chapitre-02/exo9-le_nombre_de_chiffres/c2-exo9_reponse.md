@@ -13,7 +13,7 @@ PS C:\Users\MEC\Desktop\ani-1071\chapitre-02\exo9-le_nombre_de_chiffres> .\a.exe
  entrer un nombre: 2147483647 
  ce nombre possede 10 chiffres
  ``` 
- En effectuant le test sur 0 , obtient ceci:
+ En effectuant le test sur 0 ,on  obtient ceci:
  ```
  PS C:\Users\MEC\Desktop\ani-1071\chapitre-02\exo9-le_nombre_de_chiffres> .\a.exe
  entrer un nombre: 0
