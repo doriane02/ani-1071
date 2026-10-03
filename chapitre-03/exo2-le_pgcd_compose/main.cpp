@@ -1,9 +1,11 @@
 #include<cstdio>
 
  long long pgcd(long long a, long long b){
-    
-    if (a == 0 || b == 0){
-        return 0;
+    if (a < 0){
+        a = -a;
+    }
+    if (b < 0){
+        b = -b;
     }
     while (b !=  0 ){
         long long c = a % b;
@@ -17,7 +19,6 @@
      if (a == 0 || b == 0){
         return 0;
     }
-
     return a / pgcd(a, b) * b;
 
     
@@ -30,11 +31,11 @@ int main () {
         aucun = false;
         printf("%lld\n",pgcd(a,b) );
         printf("%lld\n",ppcm(a,b) );
-    
       }
 
       if (aucun){
         printf("AUCUN\n");
       }
 }
+
 
