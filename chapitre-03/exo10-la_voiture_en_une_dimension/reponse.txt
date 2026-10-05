@@ -1,0 +1,13 @@
+Mes six relevés :
+ t = 0, position = 0;
+ t = 0, position = 1;
+ t = 0, position = 4;
+ t = 0, position = 9;
+ t = 0, position = 16;
+ t = 0, position = 25;
+
+Pourquoi position n'apelle pas vitesse:
+parce que les formules de calcul de vitesse et de poition sont indépendantes. x0 + vitesse(...) * t est faux avec une acceleration
+
+Ce qu'une fonction pure me garantit :
+Avec les memes arguments, on obtient toujours le meme résultat et aucun état n'est égaré entre deux appels. Ainsi on peut tester chaque fonction seule et l'ordre des appels n'a pas d'importance.
