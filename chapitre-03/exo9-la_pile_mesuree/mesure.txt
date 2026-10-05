@@ -1,0 +1,7 @@
+Sans tableau, essai 1: 43194
+Sans tableau, essai 2: 43188
+Sans tableau, essai 3: 43190
+
+Avec tableau, essai 1: 511
+Avec tableau, essai 2: 512
+Avec tableau, essai 3: 512
