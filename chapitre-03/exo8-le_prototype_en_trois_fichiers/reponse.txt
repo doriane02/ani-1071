@@ -1,0 +1,3 @@
+Ce que j'ai mis dans le .h: les declarations des trois fonctions aireRectangle, aireDisque, aireTriangle.
+Ce qui se passe si j'enleve la garde : si la garde d'inclusion est retiré, le contenu du fichier .h est inclus plusieurs fois et le cmpilateur peut signaler des erreurs .
+Pourquoi main.cpp compile sans voir le corps des fonctions : pour compiler un appel, le compilateur a seuleme,t besoin de la declaration, qui donne le nom, les paramètres et le type de retour; le corps est  dans aire.cpp, et c'est l'editeur des qui relie l'appel à la definition à la fin.
