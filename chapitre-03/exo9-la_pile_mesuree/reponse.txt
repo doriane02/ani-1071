@@ -1,0 +1,3 @@
+Mes six mesures: 43194, 43188; 43190, 511, 512, 512
+Pourquoi le tableau change la profondeur: le tableau change la profondeur parce qu'il agrandit chaque cadre de la pile(d'environ 4000 octets), alors que la pile garde une taille totale fixe
+Ce que j'en retiens pour une fonction recursive: une fonction recursive doit avoir un cas d'arret et une profondeur bornee
