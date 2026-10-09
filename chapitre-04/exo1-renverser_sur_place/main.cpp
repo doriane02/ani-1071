@@ -1,9 +1,8 @@
 #include<cstdio>
 
 void renverser(int t[], int n) {
-    int c;
-   for (int i = 0; i < n - 1; i++) {
-        c = t[i];
+   for (int i = 0; i < n / 2; i++) {
+        int c = t[i];
         t[i] = t[n - i - 1];
         t[n - i - 1] = c; 
    }  
