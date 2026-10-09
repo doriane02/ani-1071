@@ -5,7 +5,6 @@ void renverser(int t[], int n) {
         int c = t[i];
         t[i] = t[n - i - 1];
         t[n - i - 1] = c; 
-        return;
    }  
 }
 
@@ -13,6 +12,10 @@ int main () {
  
     int n;
       scanf("%d", &n);
+      if (n == 0){
+        printf("AUCUN\n");
+        return 0;
+      }
       int t[n];
       for (int i = 0; i < n; i++){
         scanf("%d", &t[i]);
