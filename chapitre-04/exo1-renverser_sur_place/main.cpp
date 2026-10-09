@@ -5,6 +5,7 @@ void renverser(int t[], int n) {
         int c = t[i];
         t[i] = t[n - i - 1];
         t[n - i - 1] = c; 
+        return;
    }  
 }
 
