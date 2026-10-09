@@ -11,9 +11,9 @@ void renverser(int t[], int n) {
 
 int main () {
  
-    int n, t[n];
-
+    int n;
       scanf("%d", &n);
+      int t[n];
       for (int i = 0; i < n; i++){
         scanf("%d", &t[i]);
       }
