@@ -1,0 +1,15 @@
+Predictions :
+5 9
+9 9
+9 1
+
+Obtenu :
+5 9
+9 9
+9 1
+
+Écarts :
+aucun
+
+p=q :
+cette instruction change le contenu de p(adresse de a) pour le contenu de q(adresse de b); elle ne change pas q, qui contient toujours l'adresse de b
