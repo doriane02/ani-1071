@@ -1,0 +1,25 @@
+a :
+premier essai : *a = 5;
+message d'erreur : troisconst.cpp:8:8: error: assignment of read-only location '* a'
+    8 |     *a = 5;
+    deuxieme essai : a = &y; acceptée
+
+b :
+premier essai : *b = 5; acceptée
+deuxieme essai : &b = y;
+message d'erreur : troisconst.cpp:8:5: error: lvalue required as left operand of assignment
+    8 |     &b = y;
+
+c :
+premier essai : *c = 5;
+message d'erreur : troisconst.cpp:8:8: error: assignment of read-only location '*(const int*)c'
+    8 |     *c = 5;
+      |     ~~~^~~
+deuxieme essai : &c = y;
+message d'erreur : troisconst.cpp:8:5: error: lvalue required as left operand of assignment
+    8 |     &c = y;
+
+Règle :
+Lorsque const est placé avant l'etoile(const int* a) : la variable désignée est constante
+Lorsque const après l'étoile(int* const b) : c'est le pointeur qui est constant
+Lorsque on a les deux(const int* cont c) : le pointeur et la variable désignés sont constants, rien n'est permis
