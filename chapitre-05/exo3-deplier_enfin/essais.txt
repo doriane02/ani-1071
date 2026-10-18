@@ -1,0 +1,17 @@
+deplier :
+ce que j'ai passé : i=0 , largeur = 40; ce que la fonction a ecrit x = 0 y = 0
+ce que j'ai passé : i= 25, largeur = 40; ce que la fonction a ecrit x = 25 y = 0
+ce que j'ai passé : i=79, largeur = 40; ce que la fonction a ecrit x = 39 y = 1
+ce que j'ai passé : i=80 , largeur = 40; ce que la fonction a ecrit x = 0 y = 2
+
+ minMax :
+ ce que j'ai passé : {12, 7, 19, 3, 15} n = 5; ce que la fonction a ecrit min = 3 max = 19
+  diviser : 
+  ce que j'ai passé : a = 24 , b = 5; ce que la fonction a ecrit quotient = 4 reste = 4
+  ce que j'ai passé : a = 88 , b = 14; ce que la fonction a ecrit quotient = 6 reste = 4
+
+ Par zéro :
+ avant l'appel quotient = -1 reste = -1
+ rendu : 0(false)
+ apres l'appel quotient = -1 reste = -1
+ 
