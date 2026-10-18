@@ -1,0 +1,12 @@
+Sortie :
+somme = 56
+maximum = 19
+5 4 3 2 1 
+longueur de bonjour : 7 , avec strlen : 7
+longueur de Yaound├®: 8 , avec strlen : 8
+
+Yaoundé :
+longueur rendue 8 et non 7 parce que la fonction inverser et strlen compte le nombre d'octets et non le non le nombre de caractères, et "é" occupe deux caractères
+
+Pourquoi pas const :
+dans la fonction inverser, la fonction ecrit dans les cases du tableau dans l'optique de les modifier, or const empeche ses modifications
