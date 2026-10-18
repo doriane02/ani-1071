@@ -1,0 +1,12 @@
+Sortie :
+x = 2 y = 1
+x = 1 y = 2
+i = 2.2 j = 1.1
+t = b z = a
+
+À l'appel :
+x = 2 y = 1
+x = 1 y = 2
+
+Ce qui change :
+ce qui different d'une version à l'autre pour les trois types c'est la syntaxe d'appel, av
