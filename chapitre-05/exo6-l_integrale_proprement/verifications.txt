@@ -1,0 +1,5 @@
+Intégrale :1.999998 ; 0.332834
+Dérivée : 1.0
+Zéro : 1.414214 ; 0.0
+Arrêt : on s'arrete quand b - a < 0,000001 soit 10e-6
+Sans pointeur : il faudrait rouvrir integrale pour ajouter une case dans le switch et un nouveau numero pour la quatrième fonction 
