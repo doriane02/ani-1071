@@ -1,0 +1,24 @@
+-O0 :
+total = 500000500000
+duree de la boucle : 0.003865
+duree de la boucle : 0.003613
+duree de la boucle : 0.003644
+
+-O2 :
+total = 500000500000
+duree de la boucle : 0.000000
+duree de la boucle : 0.000000
+duree de la boucle : 0.000000
+
+Un printf :
+mesure numero 1 : 0.000148
+mesure numero 2 : 0.000313
+mesure numero 3 : 0.000177
+mesure numero 4 : 0.000133
+mesure numero 5 : 0.000129
+le programme écrivait sur une fenetre du terminal
+
+Le plus cher :
+D'après mes mesures, le plus cher est la première mesure de la boucle qui additionne les entiers de 1 à 1million (0.003865)
+Avec -O0 la boucle effectue les aditions en un laps de temps mesuré. Par contre avec O2 le total est toujours le meme resultat sauf que la durée est nulle, donc soit le compilateur a calculer total à la compilation et supprimer la boucle, soit il a remplacer la boucle par une formule ou une version beaucoup plus rapide
+
