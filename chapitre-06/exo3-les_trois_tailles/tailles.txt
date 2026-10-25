@@ -1,0 +1,15 @@
+Mesures :
+structure: Vec2, taille prevue: 16 octets, taille mesurée: 16 octets
+structure: Particule, taille prevue: 40 octets, taille mesurée: 40 octets
+structure: A, taille prevue: 5 octets, taille mesurée: 8 octets
+structure: B, taille prevue: 10 octets, taille mesurée: 24 octets
+structure: C, taille prevue: 10 octets, taille mesurée: 16 octets
+
+Ordres essayés :
+vie, etat, position, vitesse: 48 octets
+position, vitesse, vie, etat: 48 octets
+vie, position, vitesse, etat: 48 octets
+etat, position, vitesse, vie: 48 octets
+etat, position, vie, vitesse: 48 octets
+
+Règle :chaque membre est placé à un multiple de son type, et la taille totale est un multiple du plus grand type
