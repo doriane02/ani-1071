@@ -1,0 +1,21 @@
+Prévu :
+au depart A(2, -4);
+apres bougerCopie A = (2, -4)
+apres bougerRef A = (3, -4)
+apres longueurRef A = (3, -4) sa longueur est 5
+
+Obtenu :
+au depart A(2, -4);
+apres bougerCopie A = (2, -4)
+apres bougerRef A = (3, -4)
+apres longueurRef A = (3, -4) sa longueur est 5
+
+Message : 
+copie.cpp:21:9: error: assignment of member 'Vec2::x' in read-only object
+   21 |     p.x = 0;
+      |     ~~~~^~~
+
+Pourquoi :
+Par copie la fonction copie le contenu de la variable, le modifie et cette copie disparait a la fin de l'appel, donc aucune modification n'est effectué sur la variable 
+Par reference, la fonction le '&' permet de modifier A directement comme si on utilisait un pointeur
+Le compilateur refuse p.x = 0 parce que le fait de declarer le parametre avec const fait en sorte que le contenu de ce dernier ne peut etre modifier
