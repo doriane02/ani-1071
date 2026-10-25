@@ -1,0 +1,9 @@
+v0 : 7.672027
+
+1/120 : 2.968077
+
+1/30 : 2.873487
+
+Mon pas : 1 / 200 : 2.980850
+
+L'écart vient : plus le pas diminue, plus la hateur maximale se rapproche de celle souhaitée(3m); doc l'erreur vient de la discrétisation en dt
