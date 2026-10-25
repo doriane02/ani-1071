@@ -1,0 +1,47 @@
+Pas choisi : dt = 0.5
+Distances : 
+i = 500, distance : 102.017458(explicite), 99.853539 (semi-implicite)
+i = 1000, distance : 105.605656(explicite), 100.240500 (semi-implicite)
+i = 1500, distance : 106.379377(explicite), 99.766186 (semi-implicite)
+i = 2000, distance : 109.150785(explicite), 100.139236 (semi-implicite)
+i = 2500, distance : 111.997026(explicite), 100.016618 (semi-implicite)
+i = 3000, distance : 112.390258(explicite), 99.840440 (semi-implicite)
+i = 3500, distance : 115.137458(explicite), 100.244782 (semi-implicite)
+i = 4000, distance : 117.888463(explicite), 99.772378 (semi-implicite)
+i = 4500, distance : 118.060035(explicite), 100.125094 (semi-implicite)
+i = 5000, distance : 120.111985(explicite), 100.033165 (semi-implicite)
+i = 5500, distance : 123.287075(explicite), 99.828053 (semi-implicite)
+i = 6000, distance : 123.746680(explicite), 100.247993 (semi-implicite)
+i = 6500, distance : 124.446107(explicite), 99.779587 (semi-implicite)
+i = 7000, distance : 127.658870(explicite), 100.110403 (semi-implicite)
+i = 7500, distance : 129.477930(explicite), 100.049568 (semi-implicite)
+i = 8000, distance : 129.207476(explicite), 99.816433 (semi-implicite)
+i = 8500, distance : 130.831841(explicite), 100.250117 (semi-implicite)
+i = 9000, distance : 134.020121(explicite), 99.787781 (semi-implicite)
+i = 9500, distance : 135.003134(explicite), 100.095229 (semi-implicite)
+i = 10000, distance : 134.620624(explicite), 100.065755 (semi-implicite)
+
+Pas dix fois plus petit :
+dt = 0.05, explicite 100.570714, semi-implicite 100.023981
+
+Dessin :
+                 eeeeeee
+            eeeeeeeeeeeeeeeeee
+         eeeeeeessssssssseeeeeeee
+       eeeeesssss       ssssseeeee
+      eeeesss               ssseeee
+     eeeess                   sseeee
+     eeees                     seeeee
+    eeeess                     sseeee
+    eeees                       seeee
+    eeeess                     sseeee   
+     eeees                     seeeee   
+     eeeess                   sseeee    
+      eeeesss               ssseeee     
+       eeeeesssss       ssssseeeee      
+         eeeeeeessssssssseeeeeeee       
+           eeeeeeeeeeeeeeeeeee          
+               eeeeeeeeeee              
+                                        
+Laquelle tient :
+c'est la methode semi explicite qui garde son orbite, car sa distance varie entre 99.853539 et 100.065755 or, avec la methode explicite la distance passe de 102 à 134 reprensente un ecart assez important 
