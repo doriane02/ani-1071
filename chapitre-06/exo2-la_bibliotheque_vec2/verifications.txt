@@ -1,0 +1,19 @@
+Les quatre :
+length({3,4}) = 5
+dot({1,0},{0,1}) = 0
+rotate({1,0}, radians(90)) = {4.4896592169761591e-11, 1} egal a {0,1} a 1e-09 pres = oui
+reflect({1,-1},{0,1}) = {1, 1}
+
+Mes essais :
+add({1,2},{3,4}) = {4, 6}
+sub({1, 2},{4, -2}) = {-3, 4}
+scale({4, -2},3) = {12, -6}
+normalize({3,4}) = {0.59999999999999998, 0.80000000000000004}
+normalize({0,0}) = {0, 0}
+lerp({0,0},{10,20},0.5) = {5, 10}
+perp({3,4}) = {-4, 3}
+
+Epsilon :
+{4.4896592169761591e-11, 1} 
+epsilon choisi = 1e-9
+avec un PI ayant 10 chiffres aprèsla virgule, il est trop petit d'environ 9e-11, l'epsilon doit etre plus grand que l'ecart et plus petit que 1, d'où la valeur 1e-9 choisi
