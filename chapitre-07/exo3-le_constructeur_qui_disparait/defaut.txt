@@ -1,0 +1,30 @@
+Messages :
+defaut.cpp: In function 'int main()':
+defaut.cpp:7:7: error: no matching function for call to 'P::P()'
+    7 |     P x;
+      |       ^
+  • there are 3 candidates
+    • candidate 1: 'P::P(int)'
+    defaut.cpp:8:11: error: no matching function for call to 'P::P()'
+    8 |     P t[10];
+      |           ^
+  • there are 3 candidates
+    • candidate 1: 'P::P(int)'
+
+Avec a(0) :
+x.a = 0 
+
+Avec = default :
+x.a = 0
+x.a = 0
+x.a = 0
+ce que le compilateur dit: defaut.cpp:9:11: warning: 'x.P::a' is used uninitialized [-Wuninitialized]
+    9 |     printf("x.a = %d\n", x.a);
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~
+defaut.cpp:7:7: note: 'x' declared here
+    7 |     P x;
+      |       ^
+
+Pourquoi :
+dès qu'on ecrit un constructeur , meme sans parametre, le compilateur ne fabrique plus le constructeur sans parametre; donc p.x et p.t[10] n'avaient plus de constructeur à appeler, les deux etaient refusés.
+avec p() = default; on redemande le constructeur sans parametre mais il n'initialise rien, lire x.a est alors un comportement indeterminé
