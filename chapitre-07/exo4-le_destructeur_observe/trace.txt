@@ -1,0 +1,49 @@
+Prévu :
+main nait 
+fonction nait 
+fin de la fonction
+fonction meurt
+bloc nait
+fin du bloc 
+bloc meurt 
+new sans delete nait
+new avec delete nait
+new avec delete meurt 
+paire 1 nait
+paire 2 nait 
+fin du bloc des deux
+paire 1 meurt 
+paire 2 meurt
+fin du main
+main meurt
+
+Sortie :
+main nait
+fonction nait
+fin de la fonction
+fonction meurt
+bloc nait
+fin du bloc
+bloc meurt
+new sans delete nait
+new avec delete nait
+new avec delete meurt
+paire 1 nait
+paire 2 nait
+fin du bloc des deux 
+paire 2 meurt
+paire 1 meurt
+fin du main
+main meurt
+
+Explication :
+-main nait à sa declaration, et meurt à l'accolade de fin main apres "fin main"
+-fonction nait lors  de son appel et meurt avant le retour dans le main
+-bloc nait à l'entreee du bloc et meurt à son accolade fermante
+-new sans delete nait au new et ne meurt jamais
+-new sans delete nait au new et meurt à la ligne de delete rendue
+-paire 1 nait à son appel et meurt après "fin du bloc des deux"
+-paire2 nait à son appel et meurt après "fin du bloc des deux"
+
+Appel à la main :
+avec m.~Trace(); vant le return, "main meurt" apparait deux fois une fois pour l'appel à la main et la seconde à la fin du main. l'appel à la main n'a pas detruit main pour de bon, il a juste executé le corps du destructeur. Ici c'est sans danger car le destructeur ne fait qu'afficher; si la trace possedait de la memoire, le delete serait executé deux fois sur la meme zone, comportement indefini souvent un plantage
