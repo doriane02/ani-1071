@@ -1,0 +1,20 @@
+Messages :
+pile.cpp:49:7: error: 'int Pile::nombre' is private within this context
+   49 |     p.nombre = -5;
+      |       ^~~~~~
+
+      pile.cpp:50:7: error: 'int File::tete' is private within this context
+   50 |     f.tete = 7;
+      |       ^~~~
+
+Essais :pile apres 150 empilements: 100 
+pile apres 200 depilements: 0 
+file apres 150 enfilements: 100 
+file apres 100 defilements: 70 
+file apres 80 enfilements: 100 
+
+Invariant de la file :
+0 <= nombre <= CAPACITE ; 0 <= tete < CAPACITE ; 0 <= queue < CAPACITE ; queue == (tete + nombre) % CAPACITE. Queue peut être inférieure à tete (circularité). Si nombre == 0 ou nombre == CAPACITE, tete == queue
+
+Struct :
+struct avec private: : refuse p.nombre = -5. struct sans private: : accepte. Conclusion : seule la visibilité par défaut change entre struct et class ; la protection vient de private:.
