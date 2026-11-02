@@ -1,0 +1,24 @@
+Boucle :
+total = 4999999950000000
+boucle 1 : 0.316376 s
+boucle 2 : 0.307190 s
+boucle 3 : 0.301020 s
+
+Le plus court :
+d 1 : 0.000000100 s
+d 2 : 0.000000200 s
+d 3 : 0.000000200 s
+d 4 : 0.000000200 s
+d 5 : 0.000002000 s
+
+Message :
+chrono.cpp:45:17: error: passing 'const chrono' as 'this' argument discards qualifiers [-fpermissive]
+   45 |     k.redemarrer();
+      |     ~~~~~~~~~~~~^~
+
+Pourquoi :
+ecoule() est déclarée const : elle promet de ne pas modifier l'objet, elle
+ne fait que lire depart_. On peut donc l'appeler sur un objet const.
+redemarrer() n'est pas const : elle écrit dans depart_. Le compilateur
+refuse de l'appeler sur k, qui est const, pour que la promesse de
+non-modification soit respectée.
