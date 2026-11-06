@@ -1,0 +1,24 @@
+Tableau :
+Dans le main :
+afficher publique : compile
+afficher privee : refusé
+afficher protegee : refusé
+dans une methode de Derivee :
+afficher publique : compile
+afficher protegee : compile
+afficher privee : refusé
+
+Messages :
+error: 'int Base::privee' is private within this context
+   20 |         std::cout<<"afficher privee = "<<privee<<"\n";
+error: 'int Base::protegee' is protected within this context
+   27 |     std::cout <<"afficher protegee = "<<d.protegee<<"\n"; 
+   error: 'int Base::privee' is private within this context
+   28 |     std::cout <<"afficher privee = "<<d.privee<<"\n";
+      |                                         ^~~~~~  
+Fonction libre :
+error: 'int Base::protegee' is protected within this context
+   25 |     b.protegee = 1;
+      |       ^~~~~~~~
+
+Soigner n'est ni une methode de Base, ni de classe et ne peut donc pas toucher à un membre protected
