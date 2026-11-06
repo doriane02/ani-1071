@@ -1,0 +1,21 @@
+Tailles :
+Vec2 = 16
+const char* = 8
+Entite = 24
+Ennemi = 32
+Joueur = 32
+
+Écarts :
+La classe Entite a un Vec2 qui est compose de 2 doubles donc 16 octets, un const char* 8 octets, pourn total de 24 octets
+la classe Ennemi est compose de la classe Entite(24octets) et un int (4octets) pour untotal de 28 octets
+la classe Joueur est constitué de la classe Entite(24octets) et un double(8octets) pour un total de 32 octets
+
+Message :
+refusé : e.position = {2.0, 2.0}
+message d'erreur :famille.cpp:47:7: error: 'Vec2 Entite::position' is protected within this context
+   47 |     e.position = {2.0, 2.0};
+      |       ^~~~~~~~
+
+accepté :e.modifierposition(2.0, 2.0);
+le main n'est ni une methode d'entite, ni de Ennemi, ni de Joueur; donc protected lui  interdit l'accès à position.
+la methode modifierposition d'Ennemi passe parce qu'elle fait partie d'une classe qui herite publiquement de entité, donc elle a le droit d'utiliser position
