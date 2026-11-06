@@ -1,0 +1,12 @@
+Sorties :
+avec f: entite
+avec g : ennemi
+avec h : ennemi
+
+Tailles :
+
+Pourquoi :la taille en octet de entite = 8
+la taille en octet de Ennemi = 16
+
+Pourquoi:
+la fonction qui se trompe est f; elle prend son parametre par valeur, Ennemi est copie dans un objet de Entite, et seule la partie Entite est copiée. f a donc reçu un Entite, pasun Ennemi et l'appel virtuel e.nom() resout vers Entite. la fonction perd donc la partie propre a ennemi ainsi que le pointeur vers la table virtuelle de Entite, bref l'objet a perdu son type dynamique et la redefinition de nom() 
