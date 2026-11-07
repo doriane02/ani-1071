@@ -1,0 +1,27 @@
+Avec virtual :
+gEnnemi = 10
+gFantome = 30
+gRobot = 20
+le compilateur ne produit aucune erreur, ni avertissement. Resultats :gEnnemi = 10 gFantome = 30 gRobot = 20. Cela montre que chaque objet a executé sa propre version de deplacer, meme si on l'appelle par un pointeur Ennemi*. C'est virtual qui permet ce choix fait au moment de l'execution selon le type reel de l'objet.
+
+Sans virtual :
+copie.cpp:13:10: error: 'void Fantome::deplacer(double)' marked 'override', but does not override
+   13 |     void deplacer(double dt) override {(void)dt; gFantome++;}
+  
+copie.cpp:19:10: error: 'void Robot::deplacer(double)' marked 'override', but does not override
+   19 |     void deplacer (double dt) override {(void)dt; gRobot++;}
+
+en retirant override:
+ gEnnemi = 60
+gFantome = 0
+gRobot = 0
+Avec -Wall -Wextra la compilation echoue d'abord. Sans virtual, override devient invalide, car on ne peut pas redefinir une methode qui n'est pas virtuelle.
+
+Faute de frappe :
+Avec overrride:copie.cpp:13:10: error: 'void Fantome::deplacr(double)' marked 'override', but does not override
+   13 |     void deplacr(double dt) override {(void)dt; gFantome++;}
+sans override:
+ gEnnemi = 40
+gFantome = 0
+gRobot = 20
+le compteur 40 0 20 montre que la faute passe en silence quand on n'ecrit pas override 
