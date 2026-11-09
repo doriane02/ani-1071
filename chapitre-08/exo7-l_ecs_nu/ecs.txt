@@ -1,0 +1,34 @@
+Systèmes :
+pas 0 : physique = 60, rendu = 100
+pas 1 : physique = 60, rendu = 100
+pas 2 : physique = 60, rendu = 100
+pas 3 : physique = 60, rendu = 100
+pas 4 : physique = 60, rendu = 100
+physique = 62, rendue = 95
+Pendant les cinq pas, systemePhysique traite 60 entités et systemeRendue en traite 100. Les 40 décors n'ont pas de  corps(seuls les 40 balles et les 20 ennemis en possèdent), toutes les 100 entités possèdent un sprite etun transform; qpres destructions des entités de 5 en 5 du 5 au 50, leq comptes deviennent (60 - 3 + 5 = 62) pour la physique et (100 - 10 + 5) pour le systemeRendue
+
+Numéros :
+Nouveaux :  50 45 40 35 30
+les 5 nouvelles entités reçoivent ces numeros; la liste des cases libres fonctionne comme une pile: liberer remet la case en tete de la liste, et creerEntite prend la case en tete, est liberer 5, 10, ..., 50 dans cet ordre donc 50 est en tete suivis de 45, 40, 35, 30
+
+Image :
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+X X X X X X X X X X X X X X X X X X X X 
+                                        
+ oooo oooo ooooooooooooooooooooooooooooo
+                                        
+                                        
+*****                                   
+                                        
+##### #### #### #### #### #### #### ####
