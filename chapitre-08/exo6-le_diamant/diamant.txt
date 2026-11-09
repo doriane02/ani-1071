@@ -1,0 +1,27 @@
+Message :
+: error: request for member 'position' is ambiguous
+   29 |     e.position.x = 3.0;
+
+Tailles :
+premiere version:
+Taille de Entite = 16
+Taille de Mobile = 32
+Taille de visible = 24
+Taille de Ennemi = 56
+deuxieme version:
+Taille de Entite = 16
+Taille de Mobile = 40
+Taille de visible = 32
+Taille de Ennemi = 56
+
+Deux positions :
+premiere version:
+position vu par Mobile = 3
+position vu par Visible = 0
+deuxieme version:
+position vu par Mobile = 3
+position vu par Visible = 3
+
+Pourquoi jamais :
+Le diamant ne fait pas gagner de place, sans virtual l'Ennemi contient deux positions (56 octets), avec virtual il n'en contient qu'une mais ajoute deux pointeurs cachés, et il fait toujours 56 octets.
+Il rend le code fragile : sans virtual, e.position est ambigu et il faut écrire e.Mobile::position, et deux parties du même objet peuvent avoir des valeurs différentes (3 et 0).
