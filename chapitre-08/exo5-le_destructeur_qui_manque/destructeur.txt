@@ -1,0 +1,24 @@
+Avec virtual :
+~Fantome 1000
+~Trace
+~Ennemi
+
+~Fantome 1000
+~Trace
+~Ennemi
+
+Sans virtual :
+~Ennemi
+
+~Fantome 1000
+~Trace
+~Ennemi
+
+Avertissement :
+copie.cpp:25:5: warning: deleting object of polymorphic class type 'Ennemi' which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+   25 |     delete e;
+copie.cpp:28:5: warning: deleting object of polymorphic class type 'Fantome' which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+   28 |     delete f;
+
+Pourquoi :
+Sans virtual, ce qui n'est jamais détruit, c'est la partie Fantome de l'objet : ~Fantome n'est jamais appelé, donc le membre Trace n'est pas détruit (pas de ligne ~Trace) et le vecteur de 1000 cases n'est jamais libéré (fuite mémoire). Seul ~Ennemi s'exécute. La raison : delete e se fie au type du pointeur (Ennemi*) et non au type réel de l'objet, et sans virtual il n'appelle que le destructeur de la base. Avec virtual, l'appel passe par le vrai type, donc ~Fantome puis ~Ennemi s'exécutent.
