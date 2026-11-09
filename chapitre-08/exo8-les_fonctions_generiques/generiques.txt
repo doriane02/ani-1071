@@ -1,0 +1,27 @@
+Essais :
+maximum(5, 2) = 5
+minimum(5, 2) = 2
+clamp(17, 5, 9) = 9
+avant l'echange a = 4, b = 6
+apres l'echange a = 6, b = 4
+avant l'echange c = 3, d = 4.5
+apres l'echange c = 4.5, d = 3
+avant l'echange u = 1 2, v = 3 4
+apres l'echange u = 3 4, v = 1 2
+trier :
+Yaounde Zoo abricot arbre zebre 
+
+Messages : 
+   deduced conflicting types for parameter 'T' ('int' and 'double')
+          generiques.cpp:65:12:
+             65 |     maximum(3, 7.5);
+
+generiques.cpp: In instantiation of 'T maximum(T, T) [with T = Vec2]':
+generiques.cpp:64:12:   required from here
+   64 |     maximum(u, v);
+      |     ~~~~~~~^~~~~~
+generiques.cpp:15:15: error: no match for 'operator>' (operand types are 'Vec2' and 'Vec2')
+   15 |     return (a > b) ? a : b ;
+
+Tri des chaînes : On a obtenu cet ordre car std::string se compare lettre par lettre selon le code ASCII de chaque caractère, et pas selon l'ordre du dictionnaire. toutes les majuscules ont donc un code plus petit que toutes les minuscules, et les mots qui commençencent par une lettre majuscules passent avant
+ 
