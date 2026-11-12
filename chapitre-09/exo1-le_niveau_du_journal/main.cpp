@@ -1,5 +1,5 @@
 #include<iostream>
-#include<string>
+#include<cstring>
 
 int valeur (const char* s) {
     if (strcmp(s, "DEBUG") == 0){return 0;}
