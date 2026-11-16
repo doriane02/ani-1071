@@ -47,7 +47,7 @@ int main () {
         }
         if (choix == -1){
             std::cout<<"CYCLE"<<"\n";
-            std::cout<<"PROJET 0"<<"\n";
+            std::cout<<"PROJETS 0"<<"\n";
             return 0;
         }
         
