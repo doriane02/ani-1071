@@ -1,0 +1,12 @@
+Ce que j'ai mis dans le .h et pourquoi :
+J'ai mis uniquement la structure du vec2, la declarations des fonctions ajouter, produitScalaire et longueur
+
+Le message exact quand j'ai appele l'aide depuis main :
+C:\Users\MEC\Desktop\ani-1071\chapitre-09\exo8-votre_projet_en_trois_fichiers_et_un_jenga\An ║
+║ i1071\Ani1071\src\main.cpp:12:15: error: use of undeclared identifier 'carre'                ║
+║    12 |     float t = carre(3.0f);                                                           ║
+║       |               ^                                                                      ║
+║ 1 error generated.
+
+Les deux lignes du .jenga que j'ai ajoutees, et ce que chacune remplace :
+includedirs(["include"]) remplace le -I du compilateur. files(["src/main.cpp", "src/vec2.cpp"]) remplace la liste des .cpp donnée au compilateur
