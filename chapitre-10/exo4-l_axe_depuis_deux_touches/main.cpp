@@ -5,7 +5,7 @@ int main (){
     int position = 0;
     int comptD = 0;
     int comptI = 0;
-    
+
     std::cin>>pas>>n;
     
     for (int i = 0; i < n; i++){
