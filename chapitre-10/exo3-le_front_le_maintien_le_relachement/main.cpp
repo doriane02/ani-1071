@@ -17,7 +17,7 @@ int main (){
             comptAp++;
         } else if (comptAv == 1 && maintenant == 1){
             std::cout<<"MAINTENU"<<"\n";
-        } else if (comptAv == 0 && maintenant == 0){
+        } else if (comptAv == 1 && maintenant == 0){
             std::cout<<"RELACHE"<<"\n";
             comptR++;
         } else {
@@ -28,7 +28,7 @@ int main (){
     }
     
     std::cout<<"APPUIS "<<comptAp<<"\n";
-    std::cout<<"RELACHES " <<comptAp<<"\n";
+    std::cout<<"RELACHES " <<comptR<<"\n";
     
     return 0;
     
