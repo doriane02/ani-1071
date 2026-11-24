@@ -18,6 +18,7 @@ int main () {
         seauA += dureeA;
         seauS += duree;
         int pasA = 0, pasS = 0;
+        if (pas > 0){
         while(seauA >= pas ){
             seauA -= pas;
             pasA++;
@@ -26,7 +27,7 @@ int main () {
             seauS -= pas;
             pasS++;
         }
-        
+        }
         totalA += pasA;
         totalS += pasS;
         std::cout<< i + 1<< " "<<pasA<<" "<<pasS<<"\n";
